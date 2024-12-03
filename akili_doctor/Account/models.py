@@ -69,6 +69,9 @@ class Account(AbstractUser):
     gender = models.CharField(max_length=8, choices=GENDER, default='Male')
     date_of_birth = models.DateField(null=True, blank=True)
     profile_picture = models.ImageField(upload_to='profile_pictures/', null=True, blank=True)
+    current_streak = models.IntegerField(default=0)
+    longest_streak = models.IntegerField(default=0)  
+    last_login_date = models.DateField(null=True, blank=True)  # Last date the user logged in
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
