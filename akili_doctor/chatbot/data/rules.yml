@@ -1,0 +1,54 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Respond to greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle anxiety
+  steps:
+  - intent: ask_anxiety
+  - action: utter_anxiety_help
+
+- rule: Handle stress
+  steps:
+  - intent: ask_stress
+  - action: utter_stress_help
+
+- rule: Fallback rule
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to anxiety queries
+  steps:
+  - intent: ask_anxiety
+  - action: utter_anxiety_help
+
+- rule: Respond to depression queries
+  steps:
+  - intent: ask_depression
+  - action: utter_depression_help
+
+- rule: Provide fallback for unclear inputs
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default

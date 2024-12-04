@@ -1,0 +1,134 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Wazzup
+    - Habari
+    - Hujambo
+    - Semaje
+
+- intent: ask_anxiety
+  examples: |
+    - I feel anxious
+    - Ninasikia wasiwasi
+    - What can I do about anxiety?
+    - Unasaidiaje na wasiwasi?
+
+- intent: ask_depression
+  examples: |
+    - I feel depressed
+    - Nina huzuni
+    - What can I do about depression?
+    - Unasaidiaje na huzuni?
+
+- intent: ask_stress
+  examples: |
+    - I am stressed
+    - Ninasumbuliwa na mawazo
+    - How do I manage stress?
+    - Nawezaje kudhibiti msongo wa mawazo?
+
+- intent: ask_self_esteem
+  examples: |
+    - I feel worthless
+    - Sina furaha na mimi mwenyewe
+    - How do I build self-esteem?
+    - Nitajenga vipi heshima ya kibinafsi?
+    - I struggle with self-esteem
+    - Ninasumbuliwa na hali ya kujiamini
+
+- intent: ask_sleep_health
+  examples: |
+    - I can’t sleep
+    - Siwezi kulala
+    - How can I improve my sleep health?
+    - Nawezaje kuboresha afya ya usingizi?
+
+- intent: ask_stress
+  examples: |
+    - I feel stressed
+    - Nina msongo wa mawazo
+    - How do I deal with stress?
+    - Namna gani nipambane na msongo?
+
+- intent: ask_self_esteem
+  examples: |
+    - I struggle with self-esteem
+    - Ninasumbuliwa na hali ya kujiamini
+
+- intent: ask_mindfulness
+  examples: |
+    - How can I practice mindfulness?
+    - Mindfulness ni nini?
+
+- intent: ask_burnout
+  examples: |
+    - I feel burned out
+    - Ninahisi nimechoka kupita kiasi
+
+- intent: ask_trauma
+  examples: |
+    - I have experienced trauma
+    - Nimepitia hali ya kiwewe
+
+- intent: ask_grief
+  examples: |
+    - I am grieving
+    - Ninahuzunika baada ya msiba
+
+- intent: ask_relationships
+  examples: |
+    - How do I improve relationships?
+    - Namna gani niboreshe uhusiano wangu?
+
+- intent: ask_addiction
+  examples: |
+    - I want to quit an addiction
+    - Nataka kuacha uraibu fulani
+
+- intent: ask_sleep_health
+  examples: |
+    - How do I improve my sleep health?
+    - Nawezaje kupata usingizi bora?
+
+- intent: ask_work_life_balance
+  examples: |
+    - How do I balance work and life?
+    - Nawezaje kuzingatia kazi na maisha ya binafsi?
+
+- intent: ask_emotional_regulation
+  examples: |
+    - How do I regulate my emotions?
+    - Namna gani nidhibiti hisia zangu?
+
+- intent: ask_body_image
+  examples: |
+    - I feel bad about my body
+    - Ninajihisi vibaya kuhusu mwili wangu
+
+- intent: ask_coping_strategies
+  examples: |
+    - What are good coping strategies?
+    - Ni mikakati gani mizuri ya kukabiliana na changamoto?
+
+- intent: ask_parenting
+  examples: |
+    - How can I be a better parent?
+    - Nawezaje kuwa mzazi bora?
+
+- intent: ask_ptsd
+  examples: |
+    - I think I have PTSD
+    - Nahisi nina PTSD
+
+- intent: ask_adhd
+  examples: |
+    - I think I have ADHD
+    - Nahisi nina ADHD
+
+- intent: ask_eating_disorders
+  examples: |
+    - I struggle with eating disorders
+    - Nina matatizo ya kula

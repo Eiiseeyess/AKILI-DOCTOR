@@ -1,0 +1,130 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: handle_anxiety
+  steps:
+  - intent: ask_anxiety
+  - action: utter_anxiety_help
+
+- story: handle_depression
+  steps:
+  - intent: ask_depression
+  - action: utter_depression_help
+
+- story: handle_stress
+  steps:
+  - intent: ask_stress
+  - action: utter_stress_help
+
+- story: handle_wellness
+  steps:
+  - intent: ask_wellness
+  - action: utter_wellness_tips
+
+- story: handle_self_esteem
+  steps:
+  - intent: ask_self_esteem
+  - action: utter_self_esteem_support
+
+- story: handle_mindfulness
+  steps:
+  - intent: ask_mindfulness
+  - action: utter_mindfulness_practices
+
+- story: handle_burnout
+  steps:
+  - intent: ask_burnout
+  - action: utter_burnout_help
+
+- story: handle_trauma
+  steps:
+  - intent: ask_trauma
+  - action: utter_trauma_support
+
+- story: handle_grief
+  steps:
+  - intent: ask_grief
+  - action: utter_grief_support
+
+- story: handle_relationships
+  steps:
+  - intent: ask_relationships
+  - action: utter_relationship_tips
+
+- story: handle_addiction
+  steps:
+  - intent: ask_addiction
+  - action: utter_addiction_help
+
+- story: handle_sleep_health
+  steps:
+  - intent: ask_sleep_health
+  - action: utter_sleep_tips
+
+- story: handle_work_life_balance
+  steps:
+  - intent: ask_work_life_balance
+  - action: utter_balance_tips
+
+- story: handle_emotional_regulation
+  steps:
+  - intent: ask_emotional_regulation
+  - action: utter_emotional_regulation_tips
+
+- story: handle_body_image
+  steps:
+  - intent: ask_body_image
+  - action: utter_body_image_support
+
+- story: handle_coping_strategies
+  steps:
+  - intent: ask_coping_strategies
+  - action: utter_coping_tips
+
+- story: handle_parenting
+  steps:
+  - intent: ask_parenting
+  - action: utter_parenting_tips
+
+- story: handle_ptsd
+  steps:
+  - intent: ask_ptsd
+  - action: utter_ptsd_support
+
+- story: handle_adhd
+  steps:
+  - intent: ask_adhd
+  - action: utter_adhd_support
+
+- story: handle_eating_disorders
+  steps:
+  - intent: ask_eating_disorders
+  - action: utter_eating_disorder_help

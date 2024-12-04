@@ -1,0 +1,368 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_anxiety
+  - ask_depression
+  - ask_stress
+  - ask_wellness
+  - ask_self_esteem
+  - ask_mindfulness
+  - ask_burnout
+  - ask_trauma
+  - ask_grief
+  - ask_relationships
+  - ask_addiction
+  - ask_sleep_health
+  - ask_work_life_balance
+  - ask_emotional_regulation
+  - ask_body_image
+  - ask_coping_strategies
+  - ask_parenting
+  - ask_ptsd
+  - ask_adhd
+  - ask_eating_disorders
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Habari! Unaendelea aje leo?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Umesaidika?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "Vyema, endelea"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Kwaheri"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  - text: "Mimi ni boti, nimetengenezwa na Rasa"
+
+  utter_anxiety_help:
+  - text: "Anxiety can feel overwhelming and might interfere with your daily life. Try to practice deep breathing exercises, engage in calming activities, or talk to someone you trust. Acknowledge your feelings without judgment."
+  - text: "Wasiwasi unaweza kuwa mzito na kuathiri maisha yako ya kila siku. Jaribu kufanya mazoezi ya kupumua kwa kina, kushiriki katika shughuli za kupumzika, au kuzungumza na mtu unayemwamini. Tambua hisia zako bila hukumu."
+  - text: "It's okay to feel anxious sometimes. It’s a natural response, but learning to manage it through techniques like grounding exercises or seeking professional help can make a big difference."
+  - text: "Ni sawa kujisikia na wasiwasi wakati mwingine. Ni majibu ya kiasili, lakini kujifunza jinsi ya kuimudu kupitia mbinu kama vile mazoezi ya udhibiti wa mawazo au kutafuta msaada wa kitaalamu kunaweza kuleta tofauti kubwa."
+  - text: "Remember, taking small moments to focus on your breath and relax your body can help reduce feelings of anxiety. You are not alone in this journey."
+  - text: "Kumbuka, kuchukua muda mdogo kutafuta pumzi yako na kupumzisha mwili wako kunaweza kusaidia kupunguza hisia za wasiwasi. Hauko peke yako katika safari hii."
+
+  utter_depression_help:
+  - text: "Depression can make everything feel heavy. It's important to talk to a mental health professional or someone you trust. Remember, you don’t have to go through this alone."
+  - text: "Huzuni inaweza kufanya kila kitu kuhisi kuwa kizito. Ni muhimu kuzungumza na mtaalamu wa afya ya akili au mtu unayemwamini. Kumbuka, huwezi kupitia hii peke yako."
+  - text: "Sometimes it can feel like there’s no way out, but reaching out for help is a strong first step. Recovery is a journey, and there are people who want to help you along the way."
+  - text: "Wakati mwingine inaweza kuhisi kama hakuna njia ya kutoka, lakini kutafuta msaada ni hatua ya kwanza yenye nguvu. Kupona ni safari, na kuna watu wanaotaka kukusaidia njiani."
+  - text: "Make sure you take care of yourself and prioritize self-compassion. Every small step towards feeling better is a victory."
+  - text: "Hakikisho kwamba unajitunza na kuweka mbele upendo wa nafsi. Kila hatua ndogo kuelekea kujisikia bora ni ushindi."
+
+  utter_stress_help:
+  - text: "Stress can feel overwhelming at times. Take a moment to step back, breathe, and relax. It’s essential to give your mind and body time to recover."
+  - text: "Msongo wa mawazo unaweza kuhisi kuwa mzito wakati mwingine. Chukua muda kidogo kujiweka mbali, kupumua, na kupumzika. Ni muhimu kutoa muda kwa akili na mwili wako kupona."
+  - text: "Try practicing mindfulness techniques, such as focusing on your breath or grounding exercises, to help calm your mind during stressful moments."
+  - text: "Jaribu kufanya mazoezi ya utulivu wa akili, kama vile kuzingatia pumzi yako au mazoezi ya kutulia, ili kusaidia kupumzisha akili yako wakati wa hali ya msongo."
+  - text: "Remember to set aside time for activities that relax you, like reading, exercising, or listening to music. These breaks can help reduce stress over time."
+  - text: "Kumbuka kuweka kando muda wa shughuli zinazokupumzisha, kama kusoma, kufanya mazoezi, au kusikiliza muziki. Mapumziko haya yanaweza kusaidia kupunguza msongo kwa muda."
+
+  utter_self_esteem_help:
+  - text: "Building self-esteem takes time, and it’s okay to go at your own pace. Start by celebrating small wins, recognizing your strengths, and challenging negative thoughts about yourself."
+  - text: "Kujenga heshima ya kibinafsi huchukua muda, na ni sawa kwenda kwa kasi yako mwenyewe. Anza kwa kusherehekea mafanikio madogo, kutambua nguvu zako, na kupinga mawazo hasi kuhusu wewe mwenyewe."
+  - text: "It’s important to practice self-compassion and avoid comparing yourself to others. Focus on your own growth and appreciate how far you’ve come."
+  - text: "Ni muhimu kufanya mazoezi ya upendo wa nafsi na kuepuka kujilinganisha na wengine. Zingatia ukuaji wako mwenyewe na thamini jinsi ulivyofika mbali."
+  - text: "If you feel like you’re struggling, consider speaking to a counselor who can help you work through these feelings and build your confidence."
+  - text: "Ikiwa unahisi unapambana, fikiria kuzungumza na mshauri ambaye anaweza kukusaidia kupitia hisia hizi na kujenga imani yako."
+  
+  utter_sleep_health_help:
+  - text: "Improving sleep health can make a significant difference in your well-being. Try to establish a regular sleep routine and make your bedroom a peaceful, screen-free zone."
+  - text: "Kuboresha afya ya usingizi kunaweza kuleta tofauti kubwa katika ustawi wako. Jaribu kuanzisha ratiba ya kawaida ya kulala na kufanya chumba chako cha kulala kuwa eneo tulivu, lisilo na vifaa vya kidijitali."
+  - text: "Avoid caffeine and heavy meals close to bedtime. Instead, engage in relaxing activities like reading, meditating, or taking a warm bath to help prepare your body for rest."
+  - text: "Epuka vinywaji vya kahawa na milo nzito karibu na wakati wa kulala. Badala yake, fanya shughuli za kupumzika kama kusoma, kutafakari, au kuoga kwa maji moto ili kusaidia mwili wako kujiandaa kwa usingizi."
+  - text: "Consistent, quality sleep helps improve mood, concentration, and overall mental health. Make sleep a priority in your routine."
+  - text: "Usingizi wa kawaida na bora husaidia kuboresha hali ya akili, umakini, na afya ya akili kwa ujumla. Fanya usingizi kuwa kipaumbele katika ratiba yako."
+
+  utter_burnout_help:
+  - text: "Burnout can leave you feeling drained and overwhelmed. Taking regular breaks throughout the day is essential. Make sure to take care of your mental health by disconnecting from work when you can."
+  - text: "Kuchoka kupita kiasi kunaweza kukufanya kujihisi uchovu na kuzidiwa. Kuchukua mapumziko ya mara kwa mara wakati wa siku ni muhimu. Hakikisha unajitunza kimawazo kwa kujitenga na kazi unapoweza."
+  - text: "Make time for activities that bring you joy and relaxation. Hobbies, spending time with loved ones, or even taking a walk can help you recharge."
+  - text: "Tenga muda kwa shughuli zinazokufurahisha na kupumzika. Shauku, kutumia muda na wapendwa, au hata kutembea inaweza kukusaidia kujirejesha."
+  - text: "Setting boundaries at work and in your personal life is essential for protecting your well-being. It’s okay to say no and prioritize your health."
+  - text: "Kuweka mipaka kazini na katika maisha yako binafsi ni muhimu kwa kulinda ustawi wako. Ni sawa kusema hapana na kuzingatia afya yako."
+  - text: "Remember, small steps toward self-care can help prevent burnout from becoming overwhelming. Take breaks, ask for help, and don’t overcommit yourself."
+  - text: "Kumbuka, hatua ndogo za kujihudumia zinaweza kusaidia kuzuia kuchoka kupita kiasi kutoka kuwa mzito. Pumzika, omba msaada, na usijizidishe majukumu."
+  - text: "It's okay to rest and recharge. Your mental health and energy are important, and taking care of them is a key part of preventing burnout."
+  - text: "Ni sawa kupumzika na kujirejesha. Afya yako ya kiakili na nguvu zako ni muhimu, na kujitunza ni sehemu muhimu ya kuzuia kuchoka kupita kiasi."
+
+
+  utter_wellness_tips:
+  - text: "Wellness starts with small habits. Consider exercising regularly, eating balanced meals, and staying hydrated."
+  - text: "Afya njema huanza na tabia ndogo. Fikiria kufanya mazoezi mara kwa mara, kula mlo kamili, na kunywa maji ya kutosha."
+  - text: "Make time for yourself. Practice mindfulness or meditation to reduce stress and improve focus."
+  - text: "Tenga muda wa kujitunza. Fanya mazoezi ya utulivu au tafakari ili kupunguza msongo wa mawazo na kuimarisha umakinifu."
+  - text: "Stay connected with loved ones. Building strong relationships can enhance your emotional health."
+  - text: "Dumisha uhusiano mzuri na wapendwa. Kujenga uhusiano madhubuti kunaweza kuboresha afya yako ya kihisia."
+  - text: "Sleep well. Aim for 7-8 hours of quality sleep every night to recharge your body and mind."
+  - text: "Lala vizuri. Lenga kulala kwa muda wa saa 7-8 kila usiku ili kurejesha mwili na akili yako."
+
+  utter_mindfulness_practices:
+  - text: "Mindfulness involves being present in the moment. Start with simple breathing exercises—inhale deeply, hold for a few seconds, and exhale slowly."
+  - text: "Utulivu wa akili unahusisha kuwa makini kwa sasa. Anza na mazoezi rahisi ya kupumua—vuta pumzi kwa kina, shikilia kwa sekunde chache, na utoe polepole."
+  - text: "Consider practicing gratitude by reflecting on three things you're thankful for daily. It helps focus on the positive."
+  - text: "Fikiria kushukuru kwa kutafakari mambo matatu unayoshukuru kila siku. Hii husaidia kuzingatia mambo mazuri."
+  - text: "Take a mindful walk—observe your surroundings, the sounds, and your steps. It's a great way to reset your mind."
+  - text: "Chukua matembezi ya utulivu—angalia mazingira yako, sauti, na hatua zako. Ni njia nzuri ya kutuliza akili."
+  - text: "Engage in meditation. Start small with just 5 minutes a day to build focus and reduce stress."
+  - text: "Fanya mazoezi ya kutafakari. Anza kidogo kwa dakika 5 tu kila siku ili kuimarisha umakinifu na kupunguza msongo wa mawazo."
+
+  utter_self_esteem_support:
+  - text: "Self-esteem is important for your well-being. Start by recognizing your worth and focusing on what makes you unique."
+  - text: "Heshima ya kibinafsi ni muhimu kwa ustawi wako. Anza kwa kutambua thamani yako na kujikita katika kile kinachokufanya kuwa wa kipekee."
+  - text: "Surround yourself with people who build you up. Positive relationships can help boost your confidence and self-worth."
+  - text: "Jizunguke na watu wanaokuinua. Mahusiano chanya yanaweza kusaidia kuongeza kujiamini na kujivunia."
+  - text: "Challenge negative thoughts. When you catch yourself thinking negatively, replace those thoughts with positive affirmations."
+  - text: "Changamoto mawazo mabaya. Unapojikuta ukifikiri kwa njia hasi, badilisha mawazo hayo kwa uthibitisho chanya."
+  - text: "Celebrate your achievements, no matter how small. Every positive step you take counts."
+  - text: "Sherehekea mafanikio yako, hata ikiwa ni madogo. Kila hatua chanya unayochukua inahesabu."
+  - text: "Take care of yourself. Practice self-care activities like journaling, exercising, or spending time with loved ones."
+  - text: "Jitunze mwenyewe. Fanya shughuli za kujali kama kuandika majarida, kufanya mazoezi, au kupiga wakati na wapendwa."
+  - text: "Remember, building self-esteem is a journey. Be patient with yourself and take small steps each day."
+  - text: "Kumbuka, kujenga heshima ya kibinafsi ni safari. Kuwa mvumilivu na wewe mwenyewe na chukua hatua ndogo kila siku."
+
+  utter_trauma_support:
+  - text: "Trauma can have a lasting impact on your mental health. It’s important to acknowledge your feelings and seek professional support if needed."
+  - text: "Kiwewe kinaweza kuwa na athari ya muda mrefu kwa afya yako ya akili. Ni muhimu kutambua hisia zako na kutafuta msaada wa kitaalamu ikiwa inahitajika."
+  - text: "You are not alone in your experience. Talking to a trusted friend or family member can help you feel supported."
+  - text: "Huko pekee sio peke yako katika uzoefu wako. Kuongea na rafiki au mwanafamilia unayemwamini kunaweza kukusaidia kujihisi umeungwa mkono."
+  - text: "Consider seeking therapy or counseling. A mental health professional can guide you in processing trauma and healing."
+  - text: "Fikiria kutafuta tiba au ushauri. Mtaalamu wa afya ya akili anaweza kukuongoza katika kuchakata kiwewe na kupona."
+  - text: "Take things one step at a time. Healing from trauma is a journey, and it’s okay to go at your own pace."
+  - text: "Chukua mambo hatua kwa hatua. Kupona kutokana na kiwewe ni safari, na ni sawa kuchukua hatua kwa kasi yako mwenyewe."
+  - text: "Be kind to yourself. It’s okay to not be okay, and healing can take time. You deserve support and care."
+  - text: "Jitunze mwenyewe. Ni sawa kutokuwa sawa, na kupona kunaweza kuchukua muda. Unastahili msaada na kujali."
+  - text: "Remember, your feelings are valid, and reaching out for help is a sign of strength."
+  - text: "Kumbuka, hisia zako ni halali, na kutafuta msaada ni ishara ya nguvu."
+
+  utter_eating_disorder_help:
+  - text: "Eating disorders can be deeply challenging, but recovery is possible. It’s important to acknowledge your feelings and seek help from a professional."
+  - text: "Matatizo ya kula yanaweza kuwa changamoto kubwa, lakini kupona kunawezekana. Ni muhimu kutambua hisia zako na kutafuta msaada kutoka kwa mtaalamu."
+  - text: "Try to practice self-compassion and avoid harsh self-judgment. Healing takes time and small steps forward."
+  - text: "Jaribu kuwa na huruma kwa mwenyewe na epuka kujihukumu kwa ukali. Kupona huchukua muda na hatua ndogo mbele."
+  - text: "Consider reaching out to a therapist or counselor specializing in eating disorders. They can offer tailored guidance and support."
+  - text: "Fikiria kufikia mtaalamu au mshauri anayejishughulikia na matatizo ya kula. Wanaweza kutoa miongozo maalum na msaada."
+  - text: "Remember, your worth is not defined by your appearance or eating habits. You are more than your body."
+  - text: "Kumbuka, thamani yako haijatajwa na muonekano wako au tabia zako za kula. Wewe ni zaidi ya mwili wako."
+  - text: "Consider joining support groups where you can connect with others who understand your struggles."
+  - text: "Fikiria kujiunga na vikundi vya msaada ambapo unaweza kuungana na wengine wanaoelewa changamoto zako."
+  - text: "It’s okay to take small steps and seek help along the way. You are not alone in this journey."
+  - text: "Ni sawa kuchukua hatua ndogo na kutafuta msaada katika safari hii. Hauko peke yako katika hili."
+  - text: "Recovery is a process, and it’s okay to ask for help when you need it. You deserve to heal and feel better."
+  - text: "Kupona ni mchakato, na ni sawa kuomba msaada unapoihitaji. Unastahili kupona na kujihisi bora."
+
+  utter_adhd_support:
+  - text: "ADHD can be challenging, but with the right strategies and support, individuals can thrive. It’s important to develop routines that work for you."
+  - text: "ADHD inaweza kuwa changamoto, lakini kwa mikakati sahihi na msaada, watu wanaweza kufanikiwa. Ni muhimu kuunda ratiba ambazo zitakufaa."
+  - text: "Consider breaking tasks into smaller, manageable steps. This can make it easier to stay focused and reduce overwhelm."
+  - text: "Fikiria kugawanya kazi kuwa hatua ndogo, zinazoweza kudhibitiwa. Hii inaweza kusaidia kuwa na umakini na kupunguza kujisikia kuzidiwa."
+  - text: "Use reminders and tools like timers or planners to stay on track and manage your time effectively."
+  - text: "Tumia kumbukumbu na zana kama vile vichochezi au mipango ili kubaki kwenye njia na kudhibiti muda wako kwa ufanisi."
+  - text: "It’s helpful to break up your day into smaller blocks of time, with breaks in between, to stay energized and focused."
+  - text: "Inasaidia kugawanya siku yako kuwa vipengele vidogo vya muda, na mapumziko kati yake, ili kubaki na nguvu na umakini."
+  - text: "Seeking support from a therapist or counselor who understands ADHD can be a valuable resource. They can help you develop coping strategies."
+  - text: "Kutafuta msaada kutoka kwa mtaalamu au mshauri anayeelewa ADHD kunaweza kuwa rasilimali muhimu. Wanaweza kukusaidia kuunda mikakati ya kukabiliana."
+  - text: "It’s important to be kind to yourself. ADHD does not define who you are, and with patience and support, you can find strategies that work."
+  - text: "Ni muhimu kuwa na huruma kwa mwenyewe. ADHD haikufanyi kuwa nani, na kwa uvumilivu na msaada, unaweza kupata mikakati inayofaa."
+  - text: "Remember, everyone has their own strengths, and ADHD is just one part of who you are. Celebrate your unique abilities."
+  - text: "Kumbuka, kila mtu ana nguvu zake mwenyewe, na ADHD ni sehemu moja tu ya wewe. Sherehekea uwezo wako wa kipekee."
+  - text: "Seeking support from loved ones and friends can also provide additional encouragement and understanding."
+  - text: "Kutafuta msaada kutoka kwa wapendwa na marafiki pia kunaweza kutoa msaada wa ziada na kuelewa."
+
+  utter_addiction_help:
+  - text: "Dealing with addiction is a tough journey, but it’s possible to overcome it with the right support. Consider seeking help from a counselor or support group."
+  - text: "Kukabiliana na uraibu ni safari ngumu, lakini inawezekana kushinda kwa msaada sahihi. Fikiria kutafuta msaada kutoka kwa mshauri au kundi la msaada."
+  - text: "Breaking free from addiction starts with taking small steps. Try to focus on one day at a time and celebrate small victories."
+  - text: "Kuvunja minyororo ya uraibu huanza kwa kuchukua hatua ndogo. Jaribu kuzingatia siku moja kwa wakati na sherehekea mafanikio madogo."
+  - text: "Building healthy habits and routines can be a powerful tool in recovery. Exercise, good nutrition, and mindfulness can help in managing cravings."
+  - text: "Kujenga tabia nzuri na ratiba inaweza kuwa zana muhimu katika kupona. Mazoezi, lishe bora, na utulivu wa akili vinaweza kusaidia kudhibiti matamanio."
+  - text: "It’s important to surround yourself with a support system of people who understand what you’re going through and can offer encouragement."
+  - text: "Ni muhimu kujizungusha na mfumo wa msaada wa watu wanaoelewa unachopitia na wanaoweza kutoa hamasa."
+  - text: "Remember that setbacks are part of the process. Be patient with yourself and take each day as it comes."
+  - text: "Kumbuka kwamba maporomoko ni sehemu ya mchakato. Kuwa na uvumilivu na wewe mwenyewe na chukua kila siku inavyokuja."
+  - text: "You are not alone. Many people have walked this path and found strength and healing. Reach out for help when needed."
+  - text: "Huko peke yako. Watu wengi wametembea njia hii na wamepata nguvu na uponyaji. Tafuta msaada unapohitajika."
+  - text: "Addiction is a serious issue, but there’s always hope for change. Acknowledging the problem is the first step to recovery."
+  - text: "Uraibu ni suala la serious, lakini kila wakati kuna matumaini ya mabadiliko. Kuitambua tatizo ni hatua ya kwanza ya kupona."
+  - text: "Take it one step at a time, and don’t hesitate to reach out for professional help. Healing is possible."
+  - text: "Chukua hatua moja kwa wakati, na usisite kutafuta msaada wa kitaalamu. Uponyaji inawezekana."
+
+  utter_ptsd_support:
+  - text: "PTSD can feel overwhelming, and it’s important to know you’re not alone. Seek support from a mental health professional who can guide you through healing."
+  - text: "PTSD inaweza kuhisi kuwa mzito, na ni muhimu kujua kwamba hauko peke yako. Tafuta msaada kutoka kwa mtaalamu wa afya ya akili ambaye anaweza kukuongoza kupitia uponyaji."
+  - text: "Remember, healing from trauma takes time. Be patient with yourself and consider talking to someone you trust to help you process your feelings."
+  - text: "Kumbuka, uponyaji kutoka kwa jeraha huchukua muda. Jivunie mwenyewe na fikiria kuzungumza na mtu unayemwamini ili kukusaidia kupitia hisia zako."
+  - text: "Grounding techniques and mindfulness can help reduce flashbacks. It’s okay to take it one step at a time and seek professional support when you need it."
+  - text: "Mbinu za kutulia na utulivu wa akili zinaweza kusaidia kupunguza mawazo ya ghafla. Ni sawa kuchukua hatua moja kwa wakati na kutafuta msaada wa kitaalamu unapohitaji."
+  - text: "Consider joining a support group where you can connect with others who understand your experience. Sharing your journey with others can provide comfort and strength."
+  - text: "Fikiria kujiunga na kundi la msaada ambapo unaweza kuungana na wengine wanaoelewa uzoefu wako. Kushirikiana safari yako na wengine kunaweza kutoa faraja na nguvu."
+
+  utter_sleep_tips:
+  - text: "Good sleep is essential for both your physical and mental health. Try to establish a consistent bedtime routine, and aim for 7-8 hours of sleep each night."
+  - text: "Usingizi mzuri ni muhimu kwa afya yako ya kimwili na kihisia. Jaribu kuweka ratiba thabiti ya kulala, na lengo lako liwe kulala masaa 7-8 kila usiku."
+  - text: "Limit caffeine and heavy meals in the evening. Also, reduce screen time before bed to help your mind wind down."
+  - text: "Punguza kafeini na milo nzito jioni. Pia, punguzia matumizi ya vifaa vya kidijitali kabla ya kulala ili kusaidia akili yako kutulia."
+  - text: "Creating a calm and relaxing environment can help improve sleep quality. Try using soft lighting and reducing noise in your bedroom."
+  - text: "Kuumba mazingira ya utulivu na kupumzika kunaweza kusaidia kuboresha ubora wa usingizi. Jaribu kutumia mwanga mwepesi na kupunguza kelele katika chumba chako cha kulala."
+  - text: "Regular physical activity during the day can also improve sleep quality, but avoid intense exercise close to bedtime."
+  - text: "Shughuli za mwili za mara kwa mara wakati wa mchana pia zinaweza kuboresha ubora wa usingizi, lakini epuka mazoezi makali karibu na wakati wa kulala."
+  - text: "If you’re still having trouble sleeping, don’t hesitate to reach out to a healthcare provider for additional guidance."
+  - text: "Ikiwa bado unapata shida ya kulala, usisite kuwasiliana na mtoa huduma wa afya kwa mwongozo zaidi."
+ 
+  utter_emotional_regulation_tips:
+  - text: "Emotional regulation involves managing your emotional responses to different situations. A helpful technique is to pause and take a deep breath before reacting."
+  - text: "Udhibiti wa hisia unahusisha kudhibiti majibu yako ya kihisia kwa hali tofauti. Mbinu inayosaidia ni kusitisha kidogo na kupumua kwa kina kabla ya kujibu."
+  - text: "Practice mindfulness and self-awareness. Recognizing your emotions early can help you respond more calmly and effectively."
+  - text: "Fanya mazoezi ya utulivu wa akili na kujitambua. Kutambua hisia zako mapema kunaweza kukusaidia kujibu kwa utulivu na ufanisi."
+  - text: "Try to reframe negative thoughts. Instead of focusing on what's wrong, try looking at the situation from a different perspective."
+  - text: "Jaribu kubadili mawazo hasi. Badala ya kuzingatia kilicho kibaya, jaribu kutazama hali hiyo kutoka kwa mtazamo tofauti."
+  - text: "Engage in physical activities like walking, yoga, or exercise to release built-up tension and reset your emotional state."
+  - text: "Shiriki katika shughuli za mwili kama kutembea, yoga, au mazoezi ili kuachilia msongo wa mawazo na kurekebisha hali yako ya kihisia."
+  - text: "Develop healthy coping strategies such as journaling, talking to a friend, or practicing relaxation techniques to manage emotions."
+  - text: "Tengeneza mbinu bora za kukabiliana na changamoto kama kuandika katika diary, kuzungumza na rafiki, au kufanya mazoezi ya kupumzika ili kudhibiti hisia."
+  - text: "If you find emotional regulation challenging, consider speaking with a mental health professional for support."
+  - text: "Ikiwa unakutana na changamoto katika kudhibiti hisia zako, fikiria kuzungumza na mtaalamu wa afya ya akili kwa msaada."
+
+  utter_grief_support:
+  - text: "Grief can be overwhelming, and it's important to allow yourself time to process your emotions. Don't rush through it."
+  - text: "Huzuni inaweza kuwa mzito, na ni muhimu kujiruhusu muda wa kuchakata hisia zako. Usijaribu kuikimbia."
+  - text: "Talking to someone you trust about your feelings can provide relief. You don't have to go through it alone."
+  - text: "Kuzungumza na mtu unayemwamini kuhusu hisia zako kunaweza kutoa faraja. Huna haja ya kupitia hili peke yako."
+  - text: "Try expressing your feelings through journaling, art, or creative activities. Sometimes, expressing grief can help ease the pain."
+  - text: "Jaribu kuonyesha hisia zako kupitia kuandika, sanaa, au shughuli za ubunifu. Wakati mwingine, kuonyesha huzuni kunaweza kusaidia kupunguza maumivu."
+  - text: "Take care of yourself during this difficult time. Ensure you're eating, sleeping, and engaging in activities that support your well-being."
+  - text: "Jitunze mwenyewe wakati huu mgumu. Hakikisha unakula, usingizi, na kushiriki katika shughuli zinazosaidia ustawi wako."
+  - text: "It's okay to seek professional support. Grief counseling can help you navigate your emotions and find a path forward."
+  - text: "Ni sawa kutafuta msaada wa kitaalamu. Ushauri wa huzuni unaweza kukusaidia kupitia hisia zako na kupata njia ya kuendelea."
+  - text: "Remember, grieving is a personal journey, and everyone experiences it differently. Be patient with yourself."
+  - text: "Kumbuka, huzuni ni safari ya kibinafsi, na kila mtu hupitia kwa njia tofauti. Kuwa na subira na wewe mwenyewe."
+
+  utter_parenting_tips:
+  - text: "Parenting can be challenging, but also deeply rewarding. Focus on building a strong, open relationship with your children."
+  - text: "Ulezi unaweza kuwa changamoto, lakini pia ni furaha kubwa. Jitahidi kujenga uhusiano imara na wazi na watoto wako."
+  - text: "Take time to listen to your children's concerns and validate their feelings. Feeling heard can help them feel supported."
+  - text: "Chukua muda kusikiliza wasiwasi wa watoto wako na kuthibitisha hisia zao. Kusahau inaweza kuwafanya wajihisi wakiungwa mkono."
+  - text: "Be patient and consistent. Children thrive in environments where expectations are clear and routine is established."
+  - text: "Kuwa na subira na uthabiti. Watoto hufanikiwa katika mazingira ambapo matarajio ni wazi na ratiba imewekwa."
+  - text: "Encourage your children to express themselves. Fostering emotional intelligence helps them cope with challenges in a healthy way."
+  - text: "Himiza watoto wako kujieleza. Kukuza akili ya kihisia husaidia kukabiliana na changamoto kwa njia ya kiafya."
+  - text: "Create a balance between discipline and affection. Consistent discipline alongside love and affection can help your child feel secure."
+  - text: "Unda usawa kati ya nidhamu na mapenzi. Nidhamu ya mara kwa mara pamoja na upendo na mapenzi inaweza kumsaidia mtoto wako kujihisi salama."
+  - text: "Remember to take care of yourself too. A well-balanced parent can better support their children."
+  - text: "Kumbuka kujitunza pia. Mzazi mwenye usawa anaweza kusaidia watoto wao vizuri zaidi."
+  - text: "Seek help if you need it. There is no shame in asking for support from family, friends, or professionals."
+  - text: "Tafuta msaada ikiwa unahitaji. Hakuna aibu kuomba msaada kutoka kwa familia, marafiki, au wataalamu."
+
+  utter_coping_tips:
+  - text: "Coping with life's challenges can be tough, but there are effective strategies to help manage stress and emotions."
+  - text: "Kukabiliana na changamoto za maisha kunaweza kuwa ngumu, lakini kuna mbinu bora za kusaidia kudhibiti msongo wa mawazo na hisia."
+  - text: "Try breaking down problems into smaller, manageable tasks. This can help you feel more in control and less overwhelmed."
+  - text: "Jaribu kugawanya matatizo kuwa kazi ndogo ndogo zinazoweza kudhibitiwa. Hii inaweza kukusaidia kujihisi unadhibiti na kupunguza hisia za kuzidiwa."
+  - text: "Practice deep breathing or mindfulness to calm your mind and body when you feel stressed."
+  - text: "Fanya mazoezi ya kupumua kwa kina au utulivu wa akili ili kutuliza akili yako na mwili wakati unahisi msongo wa mawazo."
+  - text: "Engage in physical activity like walking or exercising to release built-up tension and boost your mood."
+  - text: "Shiriki katika shughuli za kimwili kama kutembea au mazoezi ili kuachilia mvutano na kuboresha hali yako ya mawazo."
+  - text: "Talk to someone you trust. Sometimes, sharing your feelings can lighten the emotional load."
+  - text: "Zungumza na mtu unayemwamini. Wakati mwingine, kushiriki hisia zako kunaweza kupunguza mzigo wa kihisia."
+  - text: "Set aside time for self-care. Engage in activities that bring you joy and relaxation, such as reading, listening to music, or taking a warm bath."
+  - text: "Tenga muda wa kujitunza. Fanya shughuli zinazokuleta furaha na utulivu, kama kusoma, kusikiliza muziki, au kuoga maji ya moto."
+  - text: "Focus on what you can control and try to let go of things that are beyond your influence."
+  - text: "Jikita katika yale unayoweza kudhibiti na jaribu kuachilia yale ambayo hayako chini ya uwezo wako."
+  - text: "Practice gratitude by acknowledging the positive aspects of your life. This can help shift your mindset and improve your mood."
+  - text: "Fanya mazoezi ya shukrani kwa kutambua upande mzuri wa maisha yako. Hii inaweza kusaidia kubadilisha mtazamo wako na kuboresha hali yako ya mawazo."
+  - text: "Remember, coping takes time. Be kind to yourself and recognize that it's okay to have difficult days."
+  - text: "Kumbuka, kukabiliana huchukua muda. Kuwa na huruma kwako mwenyewe na tambua kuwa ni sawa kuwa na siku ngumu."
+
+  utter_balance_tips:
+  - text: "Maintaining balance in life is essential for well-being. Here are some tips to help you manage work, relationships, and self-care."
+  - text: "Kudumisha usawa katika maisha ni muhimu kwa ustawi. Hapa kuna vidokezo vya kukusaidia kudhibiti kazi, uhusiano, na kujitunza."
+  - text: "Set clear boundaries between work and personal time. This will help you avoid burnout and stay focused on what matters most."
+  - text: "Weka mipaka wazi kati ya kazi na muda wa kibinafsi. Hii itakusaidia kuepuka uchovu wa kupita kiasi na kubaki na umakini kwenye kile kinachohusu zaidi."
+  - text: "Prioritize self-care by dedicating time each day to relax and recharge, whether through exercise, meditation, or hobbies."
+  - text: "Pendelea kujitunza kwa kutenga muda kila siku kwa ajili ya kupumzika na kujirejesha, iwe kwa kufanya mazoezi, kutafakari, au shughuli za burudani."
+  - text: "Learn to say 'no' when your plate is full. Saying 'no' allows you to focus on what's important and avoid overcommitting yourself."
+  - text: "Jifunze kusema 'hapana' wakati unapojawa na kazi nyingi. Kusema 'hapana' kunakuruhusu kuzingatia yale muhimu na kuepuka kujitwika mzigo mkubwa."
+  - text: "Make time for relationships. Whether with family, friends, or colleagues, nurturing meaningful connections supports emotional well-being."
+  - text: "Tenga muda kwa uhusiano. Iwe na familia, marafiki, au wenzako kazini, kulea uhusiano wa maana kunasaidia ustawi wa kihisia."
+  - text: "Take breaks during your workday. Short breaks to stretch, walk, or meditate can help clear your mind and boost productivity."
+  - text: "Pumzika wakati wa siku ya kazi. Mapumziko mafupi ya kutanua mwili, kutembea, au kutafakari yanaweza kusaidia kufafanua mawazo yako na kuongeza uzalishaji."
+  - text: "Remember, it's okay to ask for help when needed. Whether at work or in personal matters, reaching out to others can provide the support you need."
+  - text: "Kumbuka, ni sawa kutafuta msaada unapohitaji. Iwe kazini au katika mambo binafsi, kuwasiliana na wengine kunaweza kutoa msaada unaohitaji."
+  - text: "Practice time management by breaking your day into focused blocks. This helps in achieving more while reducing overwhelm."
+  - text: "Fanya mazoezi ya usimamizi wa muda kwa kugawanya siku yako kuwa vipengele vya umakini. Hii husaidia kufanikisha zaidi huku ikipunguza hisia za kuzidiwa."
+  - text: "Make time for relaxation. Whether it's reading a book, taking a walk, or simply sitting in silence, relaxation is key to maintaining balance."
+  - text: "Tenga muda wa kupumzika. Iwe ni kusoma kitabu, kutembea, au kukaa kimya, kupumzika ni muhimu kwa kudumisha usawa."
+
+  utter_relationship_tips:
+  - text: "Building and maintaining strong relationships requires effort and communication. Here are some tips to help nurture your connections."
+  - text: "Kujenga na kudumisha uhusiano mzuri kunahitaji juhudi na mawasiliano. Hapa kuna vidokezo vya kusaidia kukuza uhusiano wako."
+  - text: "Communicate openly and honestly. Express your feelings and listen actively to your partner, friend, or family member."
+  - text: "Wasiliana kwa wazi na kwa uaminifu. Elezea hisia zako na sikiliza kwa makini mpenzi wako, rafiki, au mwanafamilia."
+  - text: "Spend quality time together. Whether it's having meaningful conversations or enjoying an activity together, shared moments strengthen bonds."
+  - text: "Tumia muda wa thamani pamoja. Iwe ni kuzungumza kwa maana au kufurahia shughuli pamoja, wakati wa pamoja huimarisha uhusiano."
+  - text: "Show appreciation. Regularly express gratitude for your loved ones and acknowledge the things they do for you."
+  - text: "Onyesha shukrani. Elezea shukrani mara kwa mara kwa wapendwa wako na tambua mambo wanayokufanyia."
+  - text: "Respect each other's boundaries and individuality. Healthy relationships thrive when both people feel heard and valued."
+  - text: "Heshimu mipaka na utu wa kila mmoja. Uhusiano wenye afya unastawi wakati kila mtu anahisi kusikizwa na kuthaminiwa."
+  - text: "Handle conflicts constructively. Disagreements are natural, but approach them with empathy and a willingness to find solutions."
+  - text: "Shughulikia migogoro kwa njia inayojenga. Kutokubaliana ni jambo la kawaida, lakini inapaswa kushughulikiwa kwa huruma na utayari wa kutafuta suluhisho."
+  - text: "Support each other's goals and dreams. Being a cheerleader for each other can strengthen your connection and help you grow together."
+  - text: "Tegemeana katika malengo na ndoto za kila mmoja. Kuwa mshabiki wa kila mmoja kunaweza kuimarisha uhusiano wenu na kusaidia kukua pamoja."
+  - text: "Be patient and understanding. Relationships take time to develop, and patience is key to navigating challenges."
+  - text: "Kuwa na subira na ufahamu. Mahusiano huchukua muda kukua, na subira ni muhimu katika kukabiliana na changamoto."
+  - text: "Don’t forget to have fun together. Laughter and shared joy create lasting memories and deepen your connection."
+  - text: "Usisahau kufurahi pamoja. Kicheko na furaha inayoshirikishwa huunda kumbukumbu za kudumu na kuimarisha uhusiano."
+  - text: "Work as a team. Support each other through challenges and celebrate each other's victories, big or small."
+  - text: "Fanyeni kazi kama timu. Tegemeana kupitia changamoto na sherehekea mafanikio ya kila mmoja, makubwa au madogo."
+
+  utter_body_image_support:
+  - text: "It's normal to have concerns about body image, but remember that self-worth is not defined by appearance. Embrace your unique qualities and focus on your overall well-being."
+  - text: "Ni kawaida kuwa na wasiwasi kuhusu picha ya mwili, lakini kumbuka kuwa thamani yako ya kibinafsi haijafafanuliwa na mwonekano. Kubali sifa zako za kipekee na zingatia ustawi wako wa jumla."
+  - text: "If you're struggling with body image issues, try focusing on what your body is capable of, rather than how it looks. Celebrate your strengths and achievements."
+  - text: "Ikiwa unapata ugumu na masuala ya picha ya mwili, jaribu kuzingatia kile mwili wako unachoweza kufanya, badala ya jinsi unavyoonekana. Sherehekea nguvu zako na mafanikio yako."
+  - text: "Avoid comparing yourself to others. Social media often shows unrealistic portrayals of beauty. You are beautiful just as you are."
+  - text: "Epuka kujilinganisha na wengine. Mitandao ya kijamii mara nyingi huonyesha picha zisizo za kweli za uzuri. Wewe ni mzuri jinsi ulivyo."
+  - text: "Practice self-compassion. Be kind to yourself and remember that no one is perfect. Embrace your body for all it does for you."
+  - text: "Fanya mazoezi ya huruma kwa mwenyewe. Kuwa mwema kwa mwenyewe na kumbuka kuwa hakuna mtu aliye kamili. Kubali mwili wako kwa kila kitu unachofanya."
+  - text: "Seek support if you need it. Talking to a trusted person or a mental health professional can help you address body image concerns in a healthy way."
+  - text: "Tafuta msaada ikiwa unahitaji. Kuongea na mtu unayemwamini au mtaalamu wa afya ya akili kunaweza kukusaidia kushughulikia wasiwasi wa picha ya mwili kwa njia yenye afya."
+  - text: "Remember, beauty comes in all shapes and sizes. Focus on feeling good, not just looking good."
+  - text: "Kumbuka, uzuri upo katika sura na saizi zote. Zingatia kujisikia vizuri, sio tu kuonekana vizuri."
+  - text: "Take care of your body by nourishing it with healthy foods and staying active. When you treat your body well, it can help boost your confidence."
+  - text: "Jitunze kwa kula vyakula vyenye afya na kuwa na shughuli za kimwili. Unapohudumia mwili wako vizuri, inaweza kusaidia kuongeza kujiamini kwako."
+  - text: "You are more than just your appearance. Your character, talents, and kindness define your true beauty."
+  - text: "Wewe ni zaidi ya jinsi unavyoonekana. Tabia yako, vipaji, na wema wako ndizo zinazoamua uzuri wako wa kweli."
+
+
+  
+
+
+
+  utter_default:
+  - text: "I'm sorry, I didn't understand that. Could you try rephrasing?"
+  - text: "Pole, sijakuelewa. Unaweza rudia swali hilo namna nyinginye?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

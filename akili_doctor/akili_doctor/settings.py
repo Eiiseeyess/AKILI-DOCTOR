@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'Account',
     'streaks',
     'articles',
+    'chatbot',
 ]
 
 MIDDLEWARE = [

@@ -9,6 +9,7 @@ urlpatterns = [
     path('accounts/', include('Account.urls')),
     path('streaks/', include('streaks.urls')),
     path('articles/', include('articles.urls')),
+    path("chatbot/", include("chatbot.urls")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
