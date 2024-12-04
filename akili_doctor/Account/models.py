@@ -69,11 +69,12 @@ class Account(AbstractUser):
     gender = models.CharField(max_length=8, choices=GENDER, default='Male')
     date_of_birth = models.DateField(null=True, blank=True)
     profile_picture = models.ImageField(upload_to='profile_pictures/', null=True, blank=True)
-    current_streak = models.IntegerField(default=0)
-    longest_streak = models.IntegerField(default=0)  
-    last_login_date = models.DateField(null=True, blank=True)  # Last date the user logged in
+    current_streak = models.IntegerField(default=1)
+    longest_streak = models.IntegerField(default=1)  
+    last_login_date = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    preferences = models.OneToOneField('articles.UserArticlePreference', on_delete=models.CASCADE, related_name='user_account_preferences', null=True, blank=True)
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['first_name', 'last_name', 'email', 'password']
