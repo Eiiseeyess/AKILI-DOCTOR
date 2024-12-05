@@ -86,8 +86,9 @@ cd akili_doctor/chatbot
 ```
 
 Train the model:
-
-- rasa train
+```bash
+rasa train
+```
 
 The trained model will be saved in the models directory(akili_doctor/chatbot/models). After training, it is crucial to regularly prompt the bot to refine responses and improve its overall accuracy.
 
