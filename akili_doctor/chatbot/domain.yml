@@ -354,8 +354,21 @@ responses:
   - text: "Wewe ni zaidi ya jinsi unavyoonekana. Tabia yako, vipaji, na wema wako ndizo zinazoamua uzuri wako wa kweli."
 
 
-  
-
+  utter_follow_up_support:
+  - text: "I'm here to listen if you want to talk more. Remember, you're not alone in this journey."
+  - text: "Niko hapa kusikiliza ikiwa unataka kuzungumza zaidi. Kumbuka, hauko peke yako katika safari hii."
+  - text: "It's okay to reach out if you need further support. Talking things through can make a big difference."
+  - text: "Ni sawa kufikia msaada ikiwa unahitaji msaada zaidi. Kuongea kuhusu mambo kunaweza kuwa na tofauti kubwa."
+  - text: "Taking care of your mental health is just as important as taking care of your body. Keep going, one step at a time."
+  - text: "Kujali afya yako ya kiakili ni muhimu kama vile kujali mwili wako. Endelea, hatua moja kwa wakati."
+  - text: "If you're feeling overwhelmed, it might help to break things down into smaller steps. You're capable of overcoming this."
+  - text: "Ikiwa unahisi umejaa mzigo, inaweza kusaidia kugawanya mambo kuwa hatua ndogo. Una uwezo wa kushinda hii."
+  - text: "You are worthy of love and support. Don't hesitate to ask for help when you need it."
+  - text: "Unastahili upendo na msaada. Usisite kuomba msaada unapoihitaji."
+  - text: "Remember, healing is a process. Be patient with yourself and take the time you need."
+  - text: "Kumbuka, uponyaji ni mchakato. Kuwa mvumilivu na wewe mwenyewe na chukua muda unahitaji."
+  - text: "If you ever need to talk or just need some encouragement, I'm here for you."
+  - text: "Ikiwa unahitaji kuzungumza au unahitaji tu msukumo, nipo hapa kwa ajili yako."
 
 
   utter_default:

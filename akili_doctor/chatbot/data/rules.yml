@@ -12,7 +12,6 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-
 - rule: Respond to greetings
   steps:
   - intent: greet
@@ -28,25 +27,15 @@ rules:
   - intent: ask_stress
   - action: utter_stress_help
 
+- rule: Handle depression
+  steps:
+  - intent: ask_depression
+  - action: utter_depression_help
+
 - rule: Fallback rule
   steps:
   - intent: nlu_fallback
   - action: utter_default
-
-- rule: Greet the user
-  steps:
-  - intent: greet
-  - action: utter_greet
-
-- rule: Respond to anxiety queries
-  steps:
-  - intent: ask_anxiety
-  - action: utter_anxiety_help
-
-- rule: Respond to depression queries
-  steps:
-  - intent: ask_depression
-  - action: utter_depression_help
 
 - rule: Provide fallback for unclear inputs
   steps:

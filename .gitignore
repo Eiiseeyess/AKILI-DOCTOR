@@ -2,3 +2,4 @@ mental
 __pycache__/
 migrations/
 .rasa
+env

@@ -1,134 +1,683 @@
 version: "3.1"
+
 nlu:
-- intent: greet
-  examples: |
-    - Hi
-    - Hello
-    - Wazzup
-    - Habari
-    - Hujambo
-    - Semaje
+  - intent: greet
+    examples: |
+      - [Hi](language:en)
+      - [Hello](language:en)
+      - [Wazzup](language:en)
+      - [Habari](language:sw)
+      - [Hujambo](language:sw)
+      - [Sema](language:sw)
+      - [Yo](language:en)
+      - [Hey](language:en)
+      - [Hey there](language:en)
+      - [Sup](language:en)
+      - [How’s it going?](language:en)
+      - [Good morning](language:en)
+      - [Good afternoon](language:en)
+      - [Good evening](language:en)
+      - [Niaje](language:sw)
+      - [Mambo](language:sw)
+      - [Jambo](language:sw)
+      - [Sasa](language:sw)
+      - [Habari za asubuhi](language:sw)
+      - [Habari ya jioni](language:sw)
+      - [Howdy](language:en)
+      - [What’s up?](language:en)
+      - [Yo, how’s life?](language:en)
+      - [Wassup fam](language:en)
+      - [What’s popping](language:en)
 
-- intent: ask_anxiety
-  examples: |
-    - I feel anxious
-    - Ninasikia wasiwasi
-    - What can I do about anxiety?
-    - Unasaidiaje na wasiwasi?
+  - intent: ask_anxiety
+    examples: |
+      - [I feel anxious](language:en)
+      - [What can I do about anxiety?](language:en)
+      - [I have anxiety](language:en)
+      - [Ninasikia wasiwasi](language:sw)
+      - [Unasaidiaje na wasiwasi?](language:sw)
+      - [Nina msongo wa mawazo](language:sw)
+      - [Nina wasiwasi kuhusu kazi yangu](language:sw)
+      - [My anxiety is getting worse](language:en)
+      - [I’m really anxious](language:en)
+      - [I have a lot of anxiety](language:en)
+      - [I’m constantly on edge](language:en)
+      - [I feel like I can’t relax](language:en)
+      - [I’m panicking](language:en)
+      - [Feeling jittery all the time](language:en)
+      - [Stress is taking over](language:en)
+      - [I’m overwhelmed with anxiety](language:en)
+      - [I feel out of control](language:en)
+      - [Najiwa na wasiwasi mkubwa](language:sw)
+      - [Unaniambia vipi kuhusu wasiwasi wangu?](language:sw)
+      - [I can’t stop worrying](language:en)
+      - [Everything is making me anxious](language:en)
+      - [I’m freaking out about everything](language:en)
+      - [I'm on edge all the time](language:en)
+      - [Anxiety is killing me](language:en)
+      - [I don’t know how to calm down](language:en)
+  # Issue here
+  - intent: ask_depression
+    examples: |
+      - [I feel depressed](language:en)
+      - [What can I do about depression?](language:en)
+      - [I think I have depression](language:en)
+      - [Nina huzuni](language:sw)
+      - [Unasaidiaje na huzuni?](language:sw)
+      - [Najiwa na huzuni sana](language:sw)
+      - [I feel hopeless](language:en)
+      - [I’m struggling with depression](language:en)
+      - [I don’t know how to get out of this sadness](language:en)
+      - [I’m feeling down](language:en)
+      - [Everything feels so heavy](language:en)
+      - [I can't shake this feeling of emptiness](language:en)
+      - [I don't have energy for anything](language:en)
+      - [I’m in a dark place right now](language:en)
+      - [Nina huzuni isiyoisha](language:sw)
+      - [I feel like there’s no hope](language:en)
+      - [I can’t find joy in anything](language:en)
+      - [Ninaona kama sina maana](language:sw)
+      - [I just want to sleep forever](language:en)
+      - [I feel numb inside](language:en)
+      - [I feel empty all the time](language:en)
+      - [I’m losing interest in everything](language:en)
+      - [Nothing makes me happy anymore](language:en)
+      - [It’s hard to get out of bed](language:en)
+      - [I don’t know what to do with myself](language:en)
 
-- intent: ask_depression
-  examples: |
-    - I feel depressed
-    - Nina huzuni
-    - What can I do about depression?
-    - Unasaidiaje na huzuni?
+  - intent: ask_stress
+    examples: |
+      - [I feel stressed](language:en)
+      - [How do I manage stress?](language:en)
+      - [Ninasumbuliwa na mawazo](language:sw)
+      - [Nawezaje kudhibiti msongo wa mawazo?](language:sw)
+      - [Nina mkazo mkubwa kazini](language:sw)
+      - [I’m so stressed out](language:en)
+      - [How can I relax?](language:en)
+      - [Stress is overwhelming me](language:en)
+      - [I’m feeling really overwhelmed](language:en)
+      - [Everything is piling up](language:en)
+      - [I can’t take the pressure](language:en)
+      - [Work is stressing me out](language:en)
+      - [My mind is racing](language:en)
+      - [I have too much on my plate](language:en)
+      - [My workload is insane](language:en)
+      - [I feel like I’m drowning in stress](language:en)
+      - [I can’t keep up with everything](language:en)
+      - [I’m about to burn out](language:en)
+      - [Stress is taking over my life](language:en)
+      - [I’m losing my mind](language:en)
+      - [How do I handle all this pressure?](language:en)
+      - [I feel like I'm breaking down](language:en)
+      - [I need a break from everything](language:en)
+      - [I just want to escape](language:en)
+      - [I can’t juggle it all](language:en)
+# Not yet trained with this
+  - intent: ask_anger
+    examples: |
+      - [I feel angry](language:en)
+      - [What should I do when I'm really angry?](language:en)
+      - [Nina hasira](language:sw)
+      - [Nawezaje kudhibiti hasira yangu?](language:sw)
+      - [I'm so frustrated](language:en)
+      - [I’m furious right now](language:en)
+      - [I'm fuming](language:en)
+      - [I'm about to lose it](language:en)
+      - [I'm mad as hell](language:en)
+      - [I just can't take it anymore](language:en)
+      - [My blood is boiling](language:en)
+      - [I want to punch something](language:en)
+      - [I’m ready to explode](language:en)
+      - [I’m seeing red](language:en)
+      - [I can’t control my anger](language:en)
+      - [I’m really pissed off](language:en)
+      - [I feel so irritated](language:en)
+      - [I need to calm down](language:en)
+      - [Everything is annoying me](language:en)
+      - [I’m at my wit’s end](language:en)
+      - [This is making me lose my temper](language:en)
+      - [I can't stop being angry](language:en)
+      - [I want to scream](language:en)
+      - [I’m going crazy with anger](language:en)
 
-- intent: ask_stress
-  examples: |
-    - I am stressed
-    - Ninasumbuliwa na mawazo
-    - How do I manage stress?
-    - Nawezaje kudhibiti msongo wa mawazo?
+  - intent: ask_social_anxiety
+    examples: |
+      - [I have social anxiety](language:en)
+      - [I’m nervous around people](language:en)
+      - [Nina wasiwasi na watu wengi](language:sw)
+      - [Nawezaje kukabiliana na wasiwasi wa kijamii?](language:sw)
+      - [I can’t handle social situations](language:en)
+      - [I always feel anxious around others](language:en)
+      - [I avoid social gatherings](language:en)
+      - [I’m scared of talking to strangers](language:en)
+      - [Socializing makes me anxious](language:en)
+      - [I get so nervous in crowds](language:en)
+      - [I can’t speak in front of people](language:en)
+      - [I get paralyzed by social fear](language:en)
+      - [I feel judged all the time](language:en)
+      - [I feel awkward in conversations](language:en)
+      - [I always feel like I’m being watched](language:en)
+      - [I avoid eye contact because of anxiety](language:en)
+      - [I have a hard time making friends](language:en)
+      - [I get anxious about small talk](language:en)
+      - [People make me nervous](language:en)
+      - [I hate being the center of attention](language:en)
+      - [I don’t know how to talk to people](language:en)
+      - [I fear being rejected](language:en)
+      - [I get sweaty when talking to others](language:en)
+      - [I can’t go to parties](language:en)
 
-- intent: ask_self_esteem
-  examples: |
-    - I feel worthless
-    - Sina furaha na mimi mwenyewe
-    - How do I build self-esteem?
-    - Nitajenga vipi heshima ya kibinafsi?
-    - I struggle with self-esteem
-    - Ninasumbuliwa na hali ya kujiamini
+  - intent: ask_relaxation
+    examples: |
+      - [How can I relax?](language:en)
+      - [I need to calm down](language:en)
+      - [Unasaidiaje kupumzika?](language:sw)
+      - [Nawezaje kujiruhusu kupumzika?](language:sw)
+      - [I need a break](language:en)
+      - [How do I de-stress?](language:en)
+      - [What should I do to calm myself?](language:en)
+      - [I want to unwind](language:en)
+      - [I need to take a deep breath](language:en)
+      - [What are some good relaxation techniques?](language:en)
+      - [How can I feel less stressed?](language:en)
+      - [I want to feel at ease](language:en)
+      - [I need to clear my mind](language:en)
+      - [I feel tense, what can I do?](language:en)
+      - [How do I relax after a long day?](language:en)
+      - [I need to release the tension](language:en)
+      - [Give me some relaxation tips](language:en)
+      - [What can help me chill out?](language:en)
+      - [How do I shake off the stress?](language:en)
+      - [What can I do to feel better?](language:en)
+      - [I just need some peace](language:en)
+      - [I want to find my calm](language:en)
+      - [What are some calming activities?](language:en)
+      - [I need to center myself](language:en)
 
-- intent: ask_sleep_health
-  examples: |
-    - I can’t sleep
-    - Siwezi kulala
-    - How can I improve my sleep health?
-    - Nawezaje kuboresha afya ya usingizi?
+  - intent: ask_sleep
+    examples: |
+      - [I can’t sleep](language:en)
+      - [How can I improve my sleep?](language:en)
+      - [Nashindwa kulala](language:sw)
+      - [Nawezaje kuboresha usingizi wangu?](language:sw)
+      - [I feel tired but can’t sleep](language:en)
+      - [What can I do to sleep better?](language:en)
+      - [How can I fall asleep faster?](language:en)
+      - [I can't seem to sleep](language:en)
+      - [I wake up in the middle of the night](language:en)
+      - [I’m having trouble sleeping](language:en)
+      - [I’m always awake at night](language:en)
+      - [I don’t feel rested when I wake up](language:en)
+      - [I feel like I never get enough sleep](language:en)
+      - [I can’t get comfortable enough to sleep](language:en)
+      - [I keep tossing and turning](language:en)
+      - [I can’t sleep because I’m stressed](language:en)
+      - [How do I relax before bed?](language:en)
+      - [I keep thinking about things and can’t sleep](language:en)
+      - [What’s the best way to unwind before sleep?](language:en)
+      - [I have insomnia](language:en)
+      - [How do I fall asleep without distractions?](language:en)
+      - [How do I get a good night’s sleep?](language:en)
+      - [I feel wide awake at night](language:en)
+      - [I don’t have a regular sleep schedule](language:en)
 
-- intent: ask_stress
-  examples: |
-    - I feel stressed
-    - Nina msongo wa mawazo
-    - How do I deal with stress?
-    - Namna gani nipambane na msongo?
+  - intent: ask_coping_mechanism
+    examples: |
+      - [What are some good coping strategies?](language:en)
+      - [How can I cope with my emotions?](language:en)
+      - [Ninawezaje kukabiliana na hisia zangu?](language:sw)
+      - [Unashauri nini kama mbinu za kushinda changamoto za kiakili?](language:sw)
+      - [I need some ways to cope](language:en)
+      - [What can I do to handle stress better?](language:en)
+      - [How do I deal with tough situations?](language:en)
+      - [I need to manage my emotions](language:en)
+      - [How do I handle a difficult situation?](language:en)
+      - [What should I do to deal with tough times?](language:en)
+      - [How can I stay calm under pressure?](language:en)
+      - [What are the best ways to deal with stress?](language:en)
+      - [I need coping mechanisms](language:en)
+      - [How do I stay strong in tough times?](language:en)
+      - [How do I handle disappointment?](language:en)
+      - [What’s a good way to keep myself grounded?](language:en)
+      - [How do I stop myself from overthinking?](language:en)
+      - [What should I do when I feel overwhelmed?](language:en)
+      - [How can I regain my composure?](language:en)
+      - [What are good ways to manage panic?](language:en)
+      - [What can I do to stop feeling anxious?](language:en)
+      - [How can I build resilience?](language:en)
+      - [What’s a good way to stay positive?](language:en)
+      - [How do I stay calm when everything’s going wrong?](language:en)
+      - [How can I deal with my emotions without being overwhelmed?](language:en)
 
-- intent: ask_self_esteem
-  examples: |
-    - I struggle with self-esteem
-    - Ninasumbuliwa na hali ya kujiamini
+  - intent: ask_help
+    examples: |
+      - [I need help](language:en)
+      - [Can you help me?](language:en)
+      - [Nahitaji msaada](language:sw)
+      - [Unanisaidia vipi?](language:sw)
+      - [I feel lost](language:en)
+      - [I’m struggling](language:en)
+      - [Can you guide me?](language:en)
+      - [I’m feeling down, can you help?](language:en)
+      - [I don't know what to do](language:en)
+      - [Can I get some advice?](language:en)
+      - [I’m feeling overwhelmed, help me](language:en)
+      - [I’m in a tough spot](language:en)
+      - [I don’t know where to start](language:en)
+      - [Can you assist me with something?](language:en)
+      - [I’m having a hard time](language:en)
+      - [Help, I’m really stressed](language:en)
+      - [I don’t feel okay, can you help?](language:en)
+      - [I’m not sure how to handle this](language:en)
+      - [Can you offer some support?](language:en)
+      - [I’m facing challenges, help me out](language:en)
+      - [What should I do right now?](language:en)
+      - [I’m lost and need guidance](language:en)
+      - [I need to talk to someone](language:en)
+      - [I feel stuck](language:en)
+      - [Can I talk to someone about my problems?](language:en)
 
-- intent: ask_mindfulness
-  examples: |
-    - How can I practice mindfulness?
-    - Mindfulness ni nini?
 
-- intent: ask_burnout
-  examples: |
-    - I feel burned out
-    - Ninahisi nimechoka kupita kiasi
 
-- intent: ask_trauma
-  examples: |
-    - I have experienced trauma
-    - Nimepitia hali ya kiwewe
+  - intent: ask_self_esteem
+    examples: |
+      - [I struggle with self-esteem](language:en)
+      - [How do I build self-esteem?](language:en)
+      - [I feel worthless](language:en)
+      - [Nitajenga vipi heshima ya kibinafsi?](language:sw)
+      - [Ninasumbuliwa na hali ya kujiamini](language:sw)
+      - [How can I improve my self-worth?](language:en)
+      - [I feel inadequate](language:en)
+      - [How do I stop feeling worthless?](language:en)
+      - [I don’t like how I look](language:en)
+      - [I need to feel better about myself](language:en)
+      - [I have low self-confidence](language:en)
+      - [I’m not happy with who I am](language:en)
+      - [How can I feel more confident?](language:en)
+      - [I feel insecure](language:en)
+      - [How do I stop doubting myself?](language:en)
+      - [I don’t believe in myself](language:en)
+      - [I want to feel more empowered](language:en)
+      - [How can I feel more capable?](language:en)
+      - [How do I stop feeling unworthy?](language:en)
+      - [I need to love myself more](language:en)
+      - [What can I do to feel proud of myself?](language:en)
+      - [How do I improve my self-image?](language:en)
+      - [What are some steps to increase my self-esteem?](language:en)
+      - [How can I feel more positive about myself?](language:en)
 
-- intent: ask_grief
-  examples: |
-    - I am grieving
-    - Ninahuzunika baada ya msiba
+  - intent: ask_mindfulness
+    examples: |
+      - [How can I practice mindfulness?](language:en)
+      - [What is mindfulness?](language:en)
+      - [Mindfulness ni nini?](language:sw)
+      - [Nawezaje kujifunza mindfulness?](language:sw)
+      - [How do I start being mindful?](language:en)
+      - [What does being mindful mean?](language:en)
+      - [Can mindfulness help with stress?](language:en)
+      - [How do I live in the present moment?](language:en)
+      - [Can mindfulness improve my well-being?](language:en)
+      - [What are some mindfulness exercises?](language:en)
+      - [I want to practice mindfulness](language:en)
+      - [How can I stay in the moment?](language:en)
+      - [How do I stay focused with mindfulness?](language:en)
+      - [What are the benefits of mindfulness?](language:en)
+      - [Is mindfulness good for mental health?](language:en)
+      - [How do I meditate mindfully?](language:en)
+      - [What can mindfulness do for me?](language:en)
+      - [Can mindfulness reduce anxiety?](language:en)
+      - [What is the best way to practice mindfulness?](language:en)
+      - [How can I be more present in my daily life?](language:en)
+      - [I want to improve my mindfulness](language:en)
+      - [What should I focus on during mindfulness practice?](language:en)
+      - [What is a simple mindfulness technique?](language:en)
+      - [How do I incorporate mindfulness into my routine?](language:en)
 
-- intent: ask_relationships
-  examples: |
-    - How do I improve relationships?
-    - Namna gani niboreshe uhusiano wangu?
+  - intent: ask_burnout
+    examples: |
+      - [I feel burned out](language:en)
+      - [What should I do about burnout?](language:en)
+      - [Ninahisi nimechoka kupita kiasi](language:sw)
+      - [How do I prevent burnout?](language:en)
+      - [I am exhausted mentally](language:en)
+      - [What are the signs of burnout?](language:en)
+      - [I’m overwhelmed by work](language:en)
+      - [How do I recover from burnout?](language:en)
+      - [I feel drained all the time](language:en)
+      - [I can’t seem to keep going](language:en)
+      - [I’m tired of everything](language:en)
+      - [How can I avoid burnout in my job?](language:en)
+      - [How can I take care of myself when burned out?](language:en)
+      - [What should I do if I feel like I’m burning out?](language:en)
+      - [I need a break from work](language:en)
+      - [How do I manage burnout?](language:en)
+      - [I feel mentally exhausted](language:en)
+      - [I’m always tired and unmotivated](language:en)
+      - [What steps can I take to avoid burnout?](language:en)
+      - [How do I get my energy back?](language:en)
+      - [How do I manage stress before it leads to burnout?](language:en)
+      - [How can I prevent burnout in my daily routine?](language:en)
+      - [What are the long-term effects of burnout?](language:en)
+      - [Can burnout be reversed?](language:en)
 
-- intent: ask_addiction
-  examples: |
-    - I want to quit an addiction
-    - Nataka kuacha uraibu fulani
+  - intent: ask_trauma
+    examples: |
+      - [I have experienced trauma](language:en)
+      - [How can I heal from trauma?](language:en)
+      - [Nimepitia hali ya kiwewe](language:sw)
+      - [What are the effects of trauma?](language:en)
+      - [How do I process traumatic events?](language:en)
+      - [Can trauma be healed?](language:en)
+      - [How do I overcome trauma?](language:en)
+      - [How can I move past my trauma?](language:en)
+      - [I feel stuck because of trauma](language:en)
+      - [What steps can I take to heal from trauma?](language:en)
+      - [How do I recover from past trauma?](language:en)
+      - [What should I do after experiencing trauma?](language:en)
+      - [Is therapy the best way to heal trauma?](language:en)
+      - [How can I live with trauma?](language:en)
+      - [I feel like my trauma controls me](language:en)
+      - [What are the first steps to healing trauma?](language:en)
+      - [I want to get over my trauma](language:en)
+      - [How do I stop my trauma from affecting my life?](language:en)
+      - [Can talking about trauma help?](language:en)
+      - [How can I cope with trauma triggers?](language:en)
+      - [What are trauma-informed practices?](language:en)
+      - [How do I help someone who’s experienced trauma?](language:en)
+      - [What is the path to healing from trauma?](language:en)
+      - [How do I rebuild my life after trauma?](language:en)
 
-- intent: ask_sleep_health
-  examples: |
-    - How do I improve my sleep health?
-    - Nawezaje kupata usingizi bora?
+  - intent: ask_grief
+    examples: |
+      - [I am grieving](language:en)
+      - [How can I cope with grief?](language:en)
+      - [Ninahuzunika baada ya msiba](language:sw)
+      - [What are the stages of grief?](language:en)
+      - [How do I handle the loss of a loved one?](language:en)
+      - [What can I do to cope with grief?](language:en)
+      - [How do I stop feeling so sad?](language:en)
+      - [I feel heartbroken](language:en)
+      - [How long does grieving take?](language:en)
+      - [How do I get through grief?](language:en)
+      - [Can grieving be healed?](language:en)
+      - [What should I do during a grieving process?](language:en)
+      - [How do I comfort myself during grief?](language:en)
+      - [How can I support someone who’s grieving?](language:en)
+      - [I feel lost without my loved one](language:en)
+      - [How do I find peace after a loss?](language:en)
+      - [How do I heal from grief?](language:en)
+      - [What can help me cope with the sadness of loss?](language:en)
+      - [How do I express my grief healthily?](language:en)
+      - [What should I avoid during grief?](language:en)
+      - [How do I honor a loved one after they pass?](language:en)
+      - [How do I find closure?](language:en)
+      - [What is the grief process like?](language:en)
+      - [How do I cope with the pain of losing someone?](language:en)
 
-- intent: ask_work_life_balance
-  examples: |
-    - How do I balance work and life?
-    - Nawezaje kuzingatia kazi na maisha ya binafsi?
 
-- intent: ask_emotional_regulation
-  examples: |
-    - How do I regulate my emotions?
-    - Namna gani nidhibiti hisia zangu?
+  - intent: ask_relationships
+    examples: |
+      - [How do I improve relationships?](language:en)
+      - [Namna gani niboreshe uhusiano wangu?](language:sw)
+      - [How can I have a better relationship?](language:en)
+      - [How do I fix my relationship?](language:en)
+      - [How do I communicate better in relationships?](language:en)
+      - [I want to strengthen my relationship](language:en)
+      - [What are the key to healthy relationships?](language:en)
+      - [How do I rebuild trust in a relationship?](language:en)
+      - [How do I improve my communication with my partner?](language:en)
+      - [How can I make my relationship more fulfilling?](language:en)
+      - [How can I stop fighting with my partner?](language:en)
+      - [How do I handle relationship conflicts?](language:en)
+      - [What should I do if I feel disconnected from my partner?](language:en)
+      - [How do I work through relationship problems?](language:en)
+      - [How do I cope with relationship stress?](language:en)
+      - [What can I do to make my relationship stronger?](language:en)
+      - [How do I deal with misunderstandings in my relationship?](language:en)
+      - [How do I keep a relationship healthy?](language:en)
+      - [How do I balance love and personal space?](language:en)
+      - [How do I support my partner emotionally?](language:en)
+      - [What are the red flags in a relationship?](language:en)
+      - [How do I know if my relationship is healthy?](language:en)
+      - [What can I do to make my partner feel loved?](language:en)
+      - [How do I manage expectations in a relationship?](language:en)
 
-- intent: ask_body_image
-  examples: |
-    - I feel bad about my body
-    - Ninajihisi vibaya kuhusu mwili wangu
+  - intent: ask_addiction
+    examples: |
+      - [I want to quit an addiction](language:en)
+      - [What should I do about addiction?](language:en)
+      - [Nataka kuacha uraibu fulani](language:sw)
+      - [How can I stop being addicted to something?](language:en)
+      - [What are the steps to overcoming addiction?](language:en)
+      - [I feel trapped in my addiction](language:en)
+      - [How can I break free from addiction?](language:en)
+      - [I want to get rid of my bad habits](language:en)
+      - [What resources are available to help with addiction?](language:en)
+      - [I need support to quit my addiction](language:en)
+      - [How do I control my addiction?](language:en)
+      - [I want to stop using substances](language:en)
+      - [What are the withdrawal symptoms from addiction?](language:en)
+      - [How do I stay sober?](language:en)
+      - [How do I manage cravings during recovery?](language:en)
+      - [I need help to quit smoking](language:en)
+      - [How can I prevent relapse in addiction recovery?](language:en)
+      - [What are healthy coping mechanisms to replace addiction?](language:en)
+      - [How can I get professional help for addiction?](language:en)
+      - [How do I stay committed to quitting my addiction?](language:en)
+      - [What are the long-term effects of addiction?](language:en)
+      - [How do I deal with addiction triggers?](language:en)
+      - [What are the first steps in addiction recovery?](language:en)
+      - [How do I build a support system for addiction recovery?](language:en)
 
-- intent: ask_coping_strategies
-  examples: |
-    - What are good coping strategies?
-    - Ni mikakati gani mizuri ya kukabiliana na changamoto?
+  - intent: ask_work_life_balance
+    examples: |
+      - [How do I balance work and life?](language:en)
+      - [Nawezaje kuzingatia kazi na maisha ya binafsi?](language:sw)
+      - [How can I manage both my career and personal life?](language:en)
+      - [I feel like work is taking over my life](language:en)
+      - [How do I avoid burnout from work?](language:en)
+      - [What are the key to work-life balance?](language:en)
+      - [How do I make time for myself outside of work?](language:en)
+      - [How do I manage stress from work?](language:en)
+      - [What are the benefits of work-life balance?](language:en)
+      - [How do I set boundaries with work?](language:en)
+      - [How can I be productive while maintaining balance?](language:en)
+      - [How do I prioritize my personal life?](language:en)
+      - [What are some time management techniques for work-life balance?](language:en)
+      - [How do I disconnect from work after hours?](language:en)
+      - [How do I say no to extra work without feeling guilty?](language:en)
+      - [How can I incorporate leisure into my work routine?](language:en)
+      - [What strategies help with balancing work and personal life?](language:en)
+      - [How do I manage family and work responsibilities?](language:en)
+      - [What should I do if I feel overwhelmed by work?](language:en)
+      - [How do I avoid letting work affect my personal life?](language:en)
+      - [What is the best way to organize my day for balance?](language:en)
+      - [How do I find time for hobbies and relaxation?](language:en)
+      - [How do I reduce stress while juggling work and life?](language:en)
+      - [How do I maintain a healthy lifestyle with a busy work schedule?](language:en)
 
-- intent: ask_parenting
-  examples: |
-    - How can I be a better parent?
-    - Nawezaje kuwa mzazi bora?
+  - intent: ask_emotional_regulation
+    examples: |
+      - [How do I regulate my emotions?](language:en)
+      - [Namna gani nidhibiti hisia zangu?](language:sw)
+      - [How do I control my anger?](language:en)
+      - [What are some techniques for emotional regulation?](language:en)
+      - [How can I stop overreacting?](language:en)
+      - [How do I stay calm in stressful situations?](language:en)
+      - [How do I manage anxiety?](language:en)
+      - [What are some strategies for managing strong emotions?](language:en)
+      - [How do I prevent emotional outbursts?](language:en)
+      - [How can I better express my emotions?](language:en)
+      - [How do I handle overwhelming emotions?](language:en)
+      - [What is emotional intelligence and how can I improve it?](language:en)
+      - [How can I regulate my feelings during conflict?](language:en)
+      - [What are some ways to calm down quickly?](language:en)
+      - [How do I cope with emotional stress?](language:en)
+      - [What are some mindfulness techniques for emotional regulation?](language:en)
+      - [How do I deal with sadness?](language:en)
+      - [How do I handle fear?](language:en)
+      - [How do I manage emotions in relationships?](language:en)
+      - [How can I stay grounded when I'm emotional?](language:en)
+      - [How do I avoid emotional exhaustion?](language:en)
+      - [How do I express my emotions in a healthy way?](language:en)
+      - [What should I do when I feel emotionally drained?](language:en)
+      - [How do I manage frustration effectively?](language:en)
 
-- intent: ask_ptsd
-  examples: |
-    - I think I have PTSD
-    - Nahisi nina PTSD
 
-- intent: ask_adhd
-  examples: |
-    - I think I have ADHD
-    - Nahisi nina ADHD
+  - intent: ask_body_image
+    examples: |
+      - [I feel bad about my body](language:en)
+      - [Ninajihisi vibaya kuhusu mwili wangu](language:sw)
+      - [I don’t like the way my body looks](language:en)
+      - [I feel ashamed of my body](language:en)
+      - [How can I improve my body image?](language:en)
+      - [I feel self-conscious about my body](language:en)
+      - [I don’t feel good about my appearance](language:en)
+      - [How do I accept my body as it is?](language:en)
+      - [I’m struggling with my body image](language:en)
+      - [What can I do to feel better about my body?](language:en)
+      - [How can I improve my self-image?](language:en)
+      - [I feel uncomfortable in my own skin](language:en)
+      - [What are ways to love my body?](language:en)
+      - [I feel like I need to lose weight to be happy](language:en)
+      - [I wish I looked different](language:en)
+      - [I’m not happy with my appearance](language:en)
+      - [What are some positive body image habits?](language:en)
+      - [How do I stop comparing my body to others?](language:en)
+      - [What should I do to boost my body confidence?](language:en)
+      - [How can I stop feeling insecure about my body?](language:en)
+      - [How can I feel more comfortable with my body?](language:en)
 
-- intent: ask_eating_disorders
-  examples: |
-    - I struggle with eating disorders
-    - Nina matatizo ya kula
+  - intent: ask_coping_strategies
+    examples: |
+      - [What are good coping strategies?](language:en)
+      - [Ni mikakati gani mizuri ya kukabiliana na changamoto?](language:sw)
+      - [What should I do when I feel overwhelmed?](language:en)
+      - [How can I cope with stress?](language:en)
+      - [How do I deal with anxiety?](language:en)
+      - [What are effective coping techniques?](language:en)
+      - [How can I manage stress at work?](language:en)
+      - [How do I cope with a difficult situation?](language:en)
+      - [What can I do to calm down when I feel stressed?](language:en)
+      - [How do I cope with failure?](language:en)
+      - [What are some relaxation techniques?](language:en)
+      - [How can I handle pressure better?](language:en)
+      - [How do I deal with difficult emotions?](language:en)
+      - [What are good ways to release tension?](language:en)
+      - [How can I improve my emotional resilience?](language:en)
+      - [What should I do to cope with sadness?](language:en)
+      - [How do I manage my anger effectively?](language:en)
+      - [What are some coping strategies for depression?](language:en)
+      - [How do I stay calm in stressful situations?](language:en)
+      - [What are some healthy ways to deal with difficult feelings?](language:en)
+      - [How can I improve my ability to handle stress?](language:en)
+      - [How do I stay positive during tough times?](language:en)
+      - [What are some ways to relax and destress?](language:en)
+
+  - intent: ask_parenting
+    examples: |
+      - [How can I be a better parent?](language:en)
+      - [Nawezaje kuwa mzazi bora?](language:sw)
+      - [What are some tips for parenting?](language:en)
+      - [How can I improve my parenting skills?](language:en)
+      - [What can I do to be a more supportive parent?](language:en)
+      - [How do I raise a confident child?](language:en)
+      - [How can I communicate better with my child?](language:en)
+      - [What should I do to discipline my child effectively?](language:en)
+      - [How do I handle my child’s behavior issues?](language:en)
+      - [What are good strategies for positive parenting?](language:en)
+      - [How do I balance being loving and firm as a parent?](language:en)
+      - [What should I do if my child is acting out?](language:en)
+      - [How do I set healthy boundaries with my children?](language:en)
+      - [What are the signs of a healthy parent-child relationship?](language:en)
+      - [How can I help my child with their emotions?](language:en)
+      - [How do I manage parenting stress?](language:en)
+      - [What should I do to support my child’s education?](language:en)
+      - [How can I build a stronger connection with my child?](language:en)
+      - [What are some creative parenting ideas?](language:en)
+      - [How do I encourage my child to be independent?](language:en)
+      - [How do I deal with teenage rebellion?](language:en)
+
+  - intent: ask_ptsd
+    examples: |
+      - [I think I have PTSD](language:en)
+      - [What should I do about PTSD?](language:en)
+      - [Nahisi nina PTSD](language:sw)
+      - [What are the symptoms of PTSD?](language:en)
+      - [How do I recover from PTSD?](language:en)
+      - [How can I heal from trauma-related PTSD?](language:en)
+      - [What treatments are available for PTSD?](language:en)
+      - [How do I cope with flashbacks from PTSD?](language:en)
+      - [What should I do if I have PTSD triggers?](language:en)
+      - [How can I manage PTSD symptoms?](language:en)
+      - [What therapy options are there for PTSD?](language:en)
+      - [How do I support someone with PTSD?](language:en)
+      - [What are the long-term effects of PTSD?](language:en)
+      - [How can I reduce the impact of PTSD on my life?](language:en)
+      - [What is the best way to deal with PTSD?](language:en)
+      - [How do I help a loved one who has PTSD?](language:en)
+      - [Is PTSD treatable?](language:en)
+      - [What can I do to feel more in control with PTSD?](language:en)
+      - [How do I handle nightmares from PTSD?](language:en)
+      - [What are the signs of PTSD in others?](language:en)
+
+  - intent: ask_adhd
+    examples: |
+      - [I think I have ADHD](language:en)
+      - [What should I do about ADHD?](language:en)
+      - [Nahisi nina ADHD](language:sw)
+      - [What are the symptoms of ADHD?](language:en)
+      - [How do I manage ADHD?](language:en)
+      - [What treatments are available for ADHD?](language:en)
+      - [How do I stay focused with ADHD?](language:en)
+      - [What strategies can help me with ADHD?](language:en)
+      - [How do I cope with ADHD as an adult?](language:en)
+      - [What is the best way to treat ADHD?](language:en)
+      - [What can I do to manage my impulsivity?](language:en)
+      - [How do I improve my organization with ADHD?](language:en)
+      - [What is the role of medication in treating ADHD?](language:en)
+      - [How do I explain ADHD to others?](language:en)
+      - [What are the causes of ADHD?](language:en)
+      - [How do I handle distractibility with ADHD?](language:en)
+      - [What coping strategies work for ADHD?](language:en)
+      - [How do I deal with time management with ADHD?](language:en)
+      - [How can I support someone with ADHD?](language:en)
+      - [How can I improve my memory with ADHD?](language:en)
+
+  - intent: ask_eating_disorders
+    examples: |
+      - [I struggle with eating disorders](language:en)
+      - [How do I manage eating disorders?](language:en)
+      - [Nina matatizo ya kula](language:sw)
+      - [How do I stop binge eating?](language:en)
+      - [What are the signs of an eating disorder?](language:en)
+      - [How do I seek help for an eating disorder?](language:en)
+      - [What should I do if I have an eating disorder?](language:en)
+      - [How do I recover from an eating disorder?](language:en)
+      - [What are the causes of eating disorders?](language:en)
+      - [How can I stop overeating?](language:en)
+      - [What is the treatment for eating disorders?](language:en)
+      - [How do I improve my relationship with food?](language:en)
+      - [What are the health risks of eating disorders?](language:en)
+      - [How do I talk to someone with an eating disorder?](language:en)
+      - [How can I seek support for an eating disorder?](language:en)
+      - [What are the psychological effects of eating disorders?](language:en)
+      - [How do I stop feeling guilty about food?](language:en)
+      - [What should I do to manage disordered eating?](language:en)
+
+  - intent: nlu_fallback
+    examples: |
+      - [Pardon?](language:en)
+      - [Could you clarify that?](language:en)
+      - [Sorry, I didn’t get that.](language:en)
+      - [Huh?](language:sw)
+      - [Sijakuelewa](language:sw)
+      - [Samahani, sijakuelewa](language:sw)
+
+  - intent: ask_clarification
+    examples: |
+      - [What do you mean by that?](language:en)
+      - [Could you explain that further?](language:en)
+      - [Can you rephrase that?](language:en)
+      - [Tafadhali eleza zaidi](language:sw)
+      - [Una maana gani kwa hiyo?](language:sw)

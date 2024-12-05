@@ -2,14 +2,21 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+
+- story: greet_and_set_tone
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_introduction
+
+- story: happy_path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: sad_path_affirm
   steps:
   - intent: greet
   - action: utter_greet
@@ -19,7 +26,7 @@ stories:
   - intent: affirm
   - action: utter_happy
 
-- story: sad path 2
+- story: sad_path_exit
   steps:
   - intent: greet
   - action: utter_greet
@@ -33,98 +40,123 @@ stories:
   steps:
   - intent: ask_anxiety
   - action: utter_anxiety_help
+  - action: utter_follow_up_support
 
 - story: handle_depression
   steps:
   - intent: ask_depression
   - action: utter_depression_help
+  - action: utter_follow_up_support
 
 - story: handle_stress
   steps:
   - intent: ask_stress
   - action: utter_stress_help
-
-- story: handle_wellness
-  steps:
-  - intent: ask_wellness
-  - action: utter_wellness_tips
+  - action: utter_follow_up_support
 
 - story: handle_self_esteem
   steps:
   - intent: ask_self_esteem
   - action: utter_self_esteem_support
+  - action: utter_follow_up_support
 
 - story: handle_mindfulness
   steps:
   - intent: ask_mindfulness
   - action: utter_mindfulness_practices
+  - action: utter_follow_up_support
 
 - story: handle_burnout
   steps:
   - intent: ask_burnout
   - action: utter_burnout_help
+  - action: utter_follow_up_support
 
 - story: handle_trauma
   steps:
   - intent: ask_trauma
   - action: utter_trauma_support
+  - action: utter_follow_up_support
 
 - story: handle_grief
   steps:
   - intent: ask_grief
   - action: utter_grief_support
+  - action: utter_follow_up_support
 
 - story: handle_relationships
   steps:
   - intent: ask_relationships
   - action: utter_relationship_tips
+  - action: utter_follow_up_support
 
 - story: handle_addiction
   steps:
   - intent: ask_addiction
   - action: utter_addiction_help
+  - action: utter_follow_up_support
 
 - story: handle_sleep_health
   steps:
   - intent: ask_sleep_health
   - action: utter_sleep_tips
+  - action: utter_follow_up_support
 
 - story: handle_work_life_balance
   steps:
   - intent: ask_work_life_balance
   - action: utter_balance_tips
+  - action: utter_follow_up_support
 
 - story: handle_emotional_regulation
   steps:
   - intent: ask_emotional_regulation
   - action: utter_emotional_regulation_tips
+  - action: utter_follow_up_support
 
 - story: handle_body_image
   steps:
   - intent: ask_body_image
   - action: utter_body_image_support
+  - action: utter_follow_up_support
 
 - story: handle_coping_strategies
   steps:
   - intent: ask_coping_strategies
   - action: utter_coping_tips
+  - action: utter_follow_up_support
 
 - story: handle_parenting
   steps:
   - intent: ask_parenting
   - action: utter_parenting_tips
+  - action: utter_follow_up_support
 
 - story: handle_ptsd
   steps:
   - intent: ask_ptsd
   - action: utter_ptsd_support
+  - action: utter_follow_up_support
 
 - story: handle_adhd
   steps:
   - intent: ask_adhd
   - action: utter_adhd_support
+  - action: utter_follow_up_support
 
 - story: handle_eating_disorders
   steps:
   - intent: ask_eating_disorders
   - action: utter_eating_disorder_help
+  - action: utter_follow_up_support
+
+- story: handle_language_switch
+  steps:
+  - intent: greet
+  - action: detect_language
+  - action: utter_greet_language_specific
+
+- story: handle_fallback
+  steps:
+  - action: utter_default
+  - action: utter_clarification
