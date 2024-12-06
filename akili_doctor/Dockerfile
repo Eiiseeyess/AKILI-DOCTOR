@@ -32,9 +32,9 @@ RUN pip install -r requirements.txt
 # Install Rasa
 RUN pip install rasa
 
-# Train Rasa model
-WORKDIR /app/chatbot
-RUN rasa train
+# Train Rasa model //Depracated because of issues
+# WORKDIR /app/chatbot
+# RUN rasa train
 
 # Expose ports for Django and Rasa servers
 EXPOSE 8000 5005
